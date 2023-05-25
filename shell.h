@@ -131,24 +131,24 @@ int _eputchar(char);
 int _putfd(char c, int fd);
 int _putsfd(char *str, int fd);
 
-/* string_functions.c */
+/* string.c */
 int _strlen(char *);
 int _strcmp(char *, char *);
 char *starts_with(const char *, const char *);
 char *_strcat(char *, char *);
 
-/* string_functions2.c */
+/* string_functions.c */
 char *_strcpy(char *, char *);
 char *_strdup(const char *);
 void _puts(char *);
 int _putchar(char);
 
-/* string_functions3.c */
+/* string_functions2.c */
 char *_strncpy(char *, char *, int);
 char *_strncat(char *, char *, int);
 char *_strchr(char *, char);
 
-/* string_functions4.c */
+/* string_functions3.c */
 char **strtow(char *, char *);
 char **strtow2(char *, char);
 
@@ -231,5 +231,6 @@ void check_chain(info_t *, char *, size_t *, size_t, size_t);
 int replace_alias(info_t *);
 int replace_vars(info_t *);
 int replace_string(char **, char *);
+/* utils.c - Placeholder file */
 
 #endif
