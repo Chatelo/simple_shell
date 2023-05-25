@@ -62,7 +62,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 }
 
 /**
- * bfree - it frees a pointer 
+ * bfree - it frees a pointer
  * and NULLs the address
  * @ptr: address of a pointer to free
  *

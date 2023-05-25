@@ -1,5 +1,12 @@
 #include "shell.h"
 
+/**
+ * _strcpy - copies a string from source to destination
+ * @dest: destination string
+ * @src: source string
+ *
+ * Return: pointer to the destination string
+ */
 char *_strcpy(char *dest, char *src)
 {
 	int a = 0;
@@ -15,6 +22,12 @@ char *_strcpy(char *dest, char *src)
 	return (dest);
 }
 
+/**
+ * _strdup - duplicates a string
+ * @str: string to duplicate
+ *
+ * Return: pointer to the duplicated string
+ */
 char *_strdup(const char *str)
 {
 	int length = 0;
@@ -26,12 +39,16 @@ char *_strdup(const char *str)
 		length++;
 	ret = malloc(sizeof(char) * (length + 1));
 	if (!ret)
-		return (NULL);
+	return (NULL);
 	for (length++; length--;)
 		ret[length] = *--str;
 	return (ret);
 }
 
+/**
+ * _puts - prints a string to the standard output
+ * @str: string to print
+ */
 void _puts(char *str)
 {
 	int a = 0;
@@ -45,6 +62,12 @@ void _puts(char *str)
 	}
 }
 
+/**
+ * _putchar - writes a character to the standard output
+ * @c: character to write
+ *
+ * Return: 1 on success
+ */
 int _putchar(char c)
 {
 	static int a;

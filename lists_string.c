@@ -101,7 +101,7 @@ list_t *node_starts_with(list_t *node, char *prefix, char c)
 }
 
 /**
- * get_node_index - gets 
+ * get_node_index - gets
  * @head: pointer to list
  * @node: pointer to the node
  *

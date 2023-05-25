@@ -2,7 +2,7 @@
 
 /**
  * add_node - adds a node to the start
- * @head: address of pointer to 
+ * @head: address of pointer to
  * @str: str field of nodes.
  * @num: node index used by history.
  *
@@ -34,7 +34,7 @@ list_t *add_node(list_t **head, const char *str, int num)
 }
 
 /**
- * add_node_end - adds a node 
+ * add_node_end - adds a node
  *  @head: address of pointer
  *  @str: str field of node
  * @num: node index used by history.

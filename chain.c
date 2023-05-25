@@ -4,10 +4,9 @@
  * is_chain - test if current char in buffer
  * @info: the parameter strct
  * @buf: the char bufer
- * @p: address of curent position 
- * 
+ * @p: address of curent position
  * Return: 1 if chain delimeter, 0 otherwi
- */
+ **/
 int is_chain(info_t *info, char *buf, size_t *p)
 {
 	size_t i = *p;
@@ -31,7 +30,7 @@ int is_chain(info_t *info, char *buf, size_t *p)
 	}
 	else
 		return (0);
-	*p= i;
+	*p = i;
 	return (1);
 }
 

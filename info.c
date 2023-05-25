@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * clear_info - initialize 
+ * clear_info - initialize
  * @info: struct addr
  */
 void clear_info(info_t *info)
@@ -35,7 +35,7 @@ void set_info(info_t *info, char **av)
 				info->argv[1] = NULL;
 			}
 		}
-		for (a = 0; info->argv && info->argv[a]; a ++)
+		for (a = 0; info->argv && info->argv[a]; a++)
 			;
 		info->argc = a;
 

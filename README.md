@@ -1,2 +1,2 @@
 ## 0x16. C - Simple Shell
-C | Group project 
+C | Group project

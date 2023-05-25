@@ -6,7 +6,7 @@
  * @buf: address of buffer
  * @len: address of len var
  *
- * Return: bytes read
+ * Return: 0 on success and 1 when there is error
  */
 ssize_t input_buf(info_t *info, char **buf, size_t *len)
 {
@@ -115,7 +115,7 @@ ssize_t read_buf(info_t *info, char *buf, size_t *i)
  * @ptr: address of pointer to buffer
  * @length: size of preallocated ptr
  *
- * Return: 
+ * Return: 0 on success and 1 on any error
  */
 int _getline(info_t *info, char **ptr, size_t *length)
 {
@@ -157,8 +157,8 @@ int _getline(info_t *info, char **ptr, size_t *length)
 }
 
 /**
- * sigintHandler - blocks 
- * @sig_num: the signal 
+ * sigintHandler - blocks
+ * @sig_num: the signal
  * *
  * Return: void
  */

@@ -2,7 +2,7 @@
 
 /**
  * _myexit - exits  shell
- * @info: Structure containing potential arguments. 
+ * @info: Structure containing potential arguments.
  *          constant functio
  *  Return: exits with a given exit status
  *         (0) if info.argv[0] not "exit"
@@ -47,7 +47,7 @@ int _mycd(info_t *info)
 	{
 		dir = _getenv(info, "HOME=");
 		if (!dir)
-			chdir_ret = 
+			chdir_ret =
 				chdir((dir = _getenv(info, "PWD=")) ? dir : "/");
 		else
 			chdir_ret = chdir(dir);
