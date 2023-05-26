@@ -1,17 +1,19 @@
 #include "shell.h"
 
+
 /**
- * is_cmd - it will determine if a file is an executable command
- * @info: the info structure
- * @path: path to the file
- * Return: 1 if true, 0 otherwise
+ * is_cmd - Determines if a file is an executable command.
+ * @info: Pointer to the info struct. (No description provided)
+ * @path: Path to the file.
+ *
+ * Return: 1 if the file is an executable command, 0 otherwise.
  */
-int is_cmd(info_t *, char *);
 int is_cmd(info_t *info, char *path)
 {
 	struct stat st;
 
-	(void)info;
+	(void)info; /* Unused parameter, suppressing warning*/
+
 	if (!path || stat(path, &st))
 		return (0);
 
@@ -21,6 +23,7 @@ int is_cmd(info_t *info, char *path)
 	}
 	return (0);
 }
+
 
 /**
  * dup_chars - it duplicates characters
