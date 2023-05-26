@@ -2,7 +2,7 @@
 
 /**
  * **strtow - splits a string into words.
- * @str the input string
+ * @str:  the input string line
  * @d: the delimeter
  * Return: a pointer to an array of strings or NULL on err
  */
