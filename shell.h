@@ -1,23 +1,23 @@
 #ifndef SHELL_H
 #define SHELL_H
 
+#include <sys/types.h>
+#include <limits.h>
+#include <errno.h>
+#include <sys/stat.h>
+#include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
 #include <string.h>
-#include <sys/types.h>
 #include <sys/wait.h>
-#include <sys/stat.h>
-#include <limits.h>
 #include <fcntl.h>
-#include <errno.h>
 
-/* for read/write buffers */
+/*read/write for  buffers */
 #define READ_BUF_SIZE 1024
-#define WRITE_BUF_SIZE 1024
 #define BUF_FLUSH -1
+#define WRITE_BUF_SIZE 1024
 
-/* for command chaining */
+/*command chaining*/
 #define CMD_NORM	0
 #define CMD_OR		1
 #define CMD_AND		2
